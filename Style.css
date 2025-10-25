@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d8e78b;
+    color: #333;
+}
+header{
+    background-color: #e40909;
+    color: white;
+    padding: 10px 20px;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+}
+.logo{
+    font-size: 30px;
+    font-weight:bold;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-right: 15px;
+}
+.nav-links a:hover{
+    color: blue;
+    cursor: pointer;
+}
+.open-text{
+    background-image: url("images/background4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(16, 15, 15);
+    text-align: center;
+    padding: 120px 20px;
+}
+.open-text h2, .open-text p{
+    position: relative;
+    z-index: 2;
+}
+.open-text h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 300px;
+}
+.open-text p{
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 250px;
+}
+/* 🍲 Featured Recipes */
+.recipes{
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.recipes-title{
+  font-size: 30px;
+  color: maroon;
+  margin-bottom: 30px;
+  font-weight:bold;
+}
+.recipe_block{
+display: inline-block;
+}
+.recipe_list{
+  background: white;
+  border-radius: 10px;
+  margin: 15px;
+
+  height: 150px;
+  padding-top: 150px;
+}
+
+.recipe_list:hover{
+    /* height: 150px; */
+    z-index: 5;
+}
+
+.recipe_list img{
+  width: 100%;
+  height: 200px;
+  /* object-fit: cover; */
+}
+
+.recipe_list h4{
+  margin: 15px 0 5px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.recipe_list p{
+  font-size: 15px;
+  color: #555;
+  padding: 0 15px 20px;
+}
+
+/* 🔗 Footer */
+footer {
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
