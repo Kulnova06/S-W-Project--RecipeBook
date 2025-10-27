@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #d8e78b;
     color: #333;
+    margin: 0px;
 }
 header{
     background-color: #e40909;
@@ -11,10 +12,22 @@ header{
 .navbar{
     position: sticky;
     top: 0px;
+    /* display: block; */
 }
 .logo{
     font-size: 30px;
     font-weight:bold;
+    display: inline-block;
+    width: 300px;
+}
+.nav-links{
+  display: inline-block;
+}
+.nav-links div{
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 25px;
+  
 }
 .nav-links a{
     text-decoration: none;
