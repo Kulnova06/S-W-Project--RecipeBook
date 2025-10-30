@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Hub</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
   <header>
     <nav class="navbar">
-      <div class="logo">🍽️ Recipe Hub</div>
-      <div class="nav-links">
-        <div><a href="">Home</a></div>
-        <div><a href="">Breakfast</a></div>
-        <div><a href="">Lunch</a></div>
-        <div><a href="">Dinner</a></div>
-        <div><a href="">Contact</a></div>
-      </div>
+      <h1 class="logo">🍽️ Recipe Hub</h1>
+      <ul class="nav_links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes/breakfast.html">Breakfast</a></li>
+        <li><a href="recipes/lunch.html">Lunch</a></li>
+        <li><a href="recipes/dinner.html">Dinner</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-    <div class="open-text">
-      <h2>Welcome to Recipe Hub</h2>
-      <p>Discover delicious recipes for every occasion — easy, tasty, and healthy!</p>
-    </div>
+  <main>
+    <section class="s1">
+      <div class="open_text">
+        <h2>Welcome to Recipe Hub</h2>
+        <p>Discover delicious recipes for every occasion — easy, tasty, and healthy!</p>
+      </div>
+    </section>
 
-  <div class="recipes">
-    <h3 class="recipes-title">Featured Recipes</h3>
-    <div class="recipe_block">
-      <div class="recipe_list">
-        <img src="" alt="Pancakes">
-        <h4>Fluffy Pancakes</h4>
-        <p>Perfect start to your day with soft, golden pancakes.</p>
-      </div>
-      <div class="recipe_list">
-        <img src="" alt="Creamy Pasta">
-        <h4>Creamy Pasta</h4>
-        <p>Rich, cheesy, and comforting meal ready in 20 minutes.</p>
-      </div>
-      <div class="recipe_list">
-        <img src="" alt="Fresh Salad">
+    <section class="recipes_section">
+      <h3 class="section_title">Featured Recipes</h3>
+      <div class="recipebox">
+
+
+        <div class="recipe_list">
+        <img src="images/muffin.jpg" alt="Muffins">
+        <h4>Muffins</h4>
+        <p>Perfect start to your day with soft,chocolaty Muffins.</p>
+        </div>
+
+
+        <div class="recipe_list">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <h4>Pasta</h4>
+        <p>Rich,cheesy,and comforting meal ready in 20 minutes.</p>
+        </div>
+
+
+        <div class="recipe_list">
+        <img src="images/salad.jpg" alt="Salad">
         <h4>Fresh Salad</h4>
         <p>Colorful veggies tossed with light and zesty dressing.</p>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
+
   <footer>
-    <p>2025 Recipe Hub | Made by Kuldeep</p>
+    <p>&copy; 2025 Recipe Hub | Made By Kuldeep</p>
   </footer>
 </body>
 </html>
