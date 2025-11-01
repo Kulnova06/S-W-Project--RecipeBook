@@ -78,6 +78,8 @@ header{
 .recipebox{
   display:flex;
   gap:30px;
+  align-items: flex-start;
+  justify-content: center;
 }
 .recipe_list{
   background:white;
