@@ -1,112 +1,174 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #d8e78b;
-    color: #333;
-}
-header{
-    background-color: #e40909;
-    color: white;
-    padding: 10px 20px;
-}
-.navbar{
-    position: sticky;
-    top: 0px;
-}
-.logo{
-    font-size: 30px;
-    font-weight:bold;
-}
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    margin-right: 15px;
-}
-.nav-links a:hover{
-    color: blue;
-    cursor: pointer;
-}
-.open-text{
-    background-image: url("images/background4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: rgb(16, 15, 15);
-    text-align: center;
-    padding: 120px 20px;
-}
-.open-text h2, .open-text p{
-    position: relative;
-    z-index: 2;
-}
-.open-text h2{
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding-left: 300px;
-}
-.open-text p{
-    font-size: 20px;
-    font-weight: 300;
-    padding-left: 250px;
-}
-/* 🍲 Featured Recipes */
-.recipes{
-  width: 90%;
-  margin: 0px auto;
-  text-align: center;
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.recipes-title{
-  font-size: 30px;
-  color: maroon;
-  margin-bottom: 30px;
-  font-weight:bold;
-}
-.recipe_block{
-display: inline-block;
-}
-.recipe_list{
-  background: white;
-  border-radius: 10px;
-  margin: 15px;
-
-  height: 150px;
-  padding-top: 150px;
-}
-
-.recipe_list:hover{
-    /* height: 150px; */
-    z-index: 5;
-}
-
-.recipe_list img{
-  width: 100%;
-  height: 200px;
-  /* object-fit: cover; */
-}
-
-.recipe_list h4{
-  margin: 15px 0 5px;
+body {
+  display: flex;
+  background: #f7f4f2;
+  font-family: "Poppins", sans-serif;
   color: #333;
-  font-size: 20px;
-  font-weight: bold;
-
+  min-height: 100vh;
 }
 
-.recipe_list p{
-  font-size: 15px;
-  color: #555;
-  padding: 0 15px 20px;
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: linear-gradient(180deg, #ff6b6b, #f06595);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
 }
 
-/* 🔗 Footer */
-footer {
-  background-color: darkgreen;
+.logo {
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  /* transition: background 0.3s; */
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+.content {
+  margin-left: 230px;
+  width: calc(100% - 230px);
+  padding: 40px 50px;
+}
+
+/* Featured Section */
+.featured {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+}
+
+.featured img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured_text {
+  padding: 30px;
+}
+
+.featured_text h2 {
+  color: #ff5e62;
+  margin-bottom: 15px;
+}
+
+.featured_text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #ff5e62;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  /* transition: 0.3s; */
+}
+
+.btn:hover {
+  background: #f06595;
+}
+
+/* Recipe Grid */
+.grid h3 {
+  color: #f06595;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.recipe_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.recipe_item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.recipe_item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.recipe_item:hover img {
+  transform: scale(1.1);
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
   color: white;
   text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-  margin-top: 40px;
+  padding: 12px;
+  font-size: 16px;
 }
-
+.quote {
+  margin: 60px 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #555;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
